@@ -1,4 +1,4 @@
-# NexDraft-AI-Blog-Generator
+# 🚀 NexDraft-AI-Blog-Generator
 
 **NexDraft** is a lightweight, AI-powered web app that generates clean, structured blog posts from a single topic prompt. It uses Google’s Gemini 1.5 Flash model (via LangChain) to run a three-stage pipeline:
 
@@ -10,7 +10,7 @@ Built with Flask, styled for a modern dark UI, and includes a loading spinner an
 
 ---
 
-## Features
+## ✨ Features
 
 - Enter any topic — get a full blog post in seconds.
 - Three-step AI flow: research → write → review (token-controlled prompts).
@@ -23,7 +23,7 @@ Built with Flask, styled for a modern dark UI, and includes a loading spinner an
 
 ---
 
-## Screenshots
+## 📸 Screenshots
 
 ### 1.Interface UI — shows the homepage and form
 <img width="1122" height="1042" alt="image" src="https://github.com/user-attachments/assets/c45c4a7f-bdd8-48e0-a240-4504e88417b6" />
@@ -34,7 +34,7 @@ Built with Flask, styled for a modern dark UI, and includes a loading spinner an
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 - app.py ( Flask app setup and routes )
 - agents_logic.py ( LangChain pipeline (research → write → polish) )
@@ -49,7 +49,7 @@ Built with Flask, styled for a modern dark UI, and includes a loading spinner an
 
 ---
 
-## Setup Instructions
+## ⚙️ Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -84,7 +84,7 @@ Then open your browser at:
 
 ---
 
-## How to Use
+## 🧠 How to Use
 
 1. Enter a topic (e.g., Benefits of mindfulness for students).
 2. Click Generate Blog.
