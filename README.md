@@ -25,10 +25,10 @@ Built with Flask, styled for a modern dark UI, and includes a loading spinner an
 
 ## 📸 Screenshots
 
-### 1.Interface UI — shows the homepage and form
+### 1. Interface UI — shows the homepage and form
 <img width="1122" height="1042" alt="image" src="https://github.com/user-attachments/assets/c45c4a7f-bdd8-48e0-a240-4504e88417b6" />
 
-### 2.Generated Blog Output — displays a completed blog with the topic and download button
+### 2. Generated Blog Output — displays a completed blog with the topic and download button
 
 <img width="1135" height="1042" alt="image" src="https://github.com/user-attachments/assets/73c6acb6-4795-43b0-98ce-9739e9da7e84" />
 
