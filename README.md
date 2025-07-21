@@ -36,6 +36,7 @@ Built with Flask, styled for a modern dark UI, and includes a loading spinner an
 
 ## 📁 Project Structure
 
+NexDraft-AI-Blog-Generator\
 - app.py ( Flask app setup and routes )
 - agents_logic.py ( LangChain pipeline (research → write → polish) )
 -  templates/
