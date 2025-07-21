@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NexDraft - AI Blog Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>NexDraft - AI Blog Generator</h1>
+
+  <div class="container">
+    <p class="subtitle">Let AI agents draft your next viral blog</p>
+
+    <!-- Blog Generation Form -->
+    <form method="POST" onsubmit="showSpinner()">
+      <input type="text" name="topic" placeholder="Enter your blog topic..." required>
+      <button type="submit">Generate Blog</button>
+    </form>
+
+    <!-- Spinner (hidden by default) -->
+    <div class="spinner-container" id="spinner" style="display: none;">
+      <div class="spinner"></div>
+      <p>Generating your blog, please wait...</p>
+    </div>
+
+    {% if blog_post %}
+      <hr>
+      <h2>Generated Blog Post</h2>
+      <p class="topic-label"><strong>Topic:</strong> {{ topic }}</p>
+      <div class="output">{{ blog_post | safe }}</div>
+
+      <!-- Download Form -->
+      <form method="POST" action="/download">
+        <input type="hidden" name="topic" value="{{ topic }}">
+        <input type="hidden" name="content" value="{{ blog_post }}">
+        <div class="download-button-container">
+          <button type="submit" class="download-btn">Download Blog</button>
+        </div>
+      </form>
+    {% endif %}
+  </div>
+
+  <script>
+    function showSpinner() {
+      document.getElementById("spinner").style.display = "flex";
+    }
+  </script>
+</body>
+</html>
